@@ -10,19 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 
-    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <title>Frontend | Sunnyside agency landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
+    <style>
         .attribution {
             font-size: 11px;
             text-align: center;
+            padding-top: 2rem;
         }
         
         .attribution a {
             color: hsl(228, 45%, 44%);
         }
-    </style> -->
+    </style>
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -39,20 +40,17 @@
 
         <nav class="navigation__nav">
             <h1 class="heading__primary header--logo">sunnyside</h1>
-
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#" class="navigation__link ">About</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link ">Services</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link ">Projects</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link ">Contact</a></li>
+                <li class="navigation__item"><a href="#" class="navigation-contact">Contact</a></li>
             </ul>
-            <h2 class="heading-secondary">We are creatives</h2>
             <!-- <ion-icon name="arrow-down-outline"></ion-icon> -->
-            <img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow-down">
-
-
-
         </nav>
+
+        <h2 class="heading-primary">We are creatives
+            <img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow-down"></h2>
     </div>
 
 
@@ -99,36 +97,39 @@
             <h2 class="heading-secondary">Client testimonials </h2>
             <div class="clients-testimonials">
 
-
                 <div class="client__emily ">
                     <img src="./images/image-emily.jpg " alt="emily " class="client__image" />
-                    <p class="client__paragraph">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                    <p class="client__paragraph">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
 
-                    <span><strong> Emily R.</strong> Marketing Director</span>
+                        <span class="client__name"> Emily R.  </span>Marketing Director</p>
                 </div>
 
                 <div class="client__thomas ">
                     <img src="./images/image-thomas.jpg " alt="Thomas " class="client__image" />
 
-                    <p class="client__paragraph">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
-                    <span> <strong>Thomas S.</strong> Chief Operating Officer</span>
+                    <p class="client__paragraph">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.
+                        <span class="client__name"> Thomas S. </span> Chief Operating Officer</p>
                 </div>
 
                 <div class="client__jennie ">
                     <img src="./images/image-jennie.jpg " alt="Jennie " class="client__image " />
-                    <p class="client__paragraph">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                    <p class="client__paragraph">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
 
-                    <span><strong>Jennie F.</strong> Business Owner<span>
-                </div> 
+                        <span class="client__name">Jennie F. </span> Business Owner</p>
+                </div>
             </div>
         </section>
 
 
         <section class="image-container ">
-            <img src="./images/desktop/image-gallery-milkbottles.jpg " alt="milkbottles " class="image-gallery "/>
-            <img src="./images/desktop/image-gallery-orange.jpg " alt="orange " class="image-gallery "/>
-            <img src="./images/desktop/image-gallery-cone.jpg " alt="cone " class="image-gallery "/>
-            <img src="./images/desktop/image-gallery-sugarcubes.jpg " alt="sugar-cubes " class="image-gallery "/>
+
+            <img src="./images/desktop/image-gallery-milkbottles.jpg " alt="milkbottles " class="image-gallery " />
+            <img src="./images/desktop/image-gallery-orange.jpg " alt="orange " class="image-gallery " />
+
+
+            <img src="./images/desktop/image-gallery-cone.jpg " alt="cone " class="image-gallery " />
+            <img src="./images/desktop/image-gallery-sugarcubes.jpg " alt="sugar-cubes " class="image-gallery " />
+
         </section>
     </main>
 
@@ -141,17 +142,26 @@
             <li class="item-3 "><a href="# ">Projects</a></li>
         </ul>
         <div class="icons">
-        <ion-icon name="logo-facebook" class="ionicons "></ion-icon>
-        <ion-icon name="logo-instagram" class="ionicons "></ion-icon>
-        <ion-icon name="logo-twitter" class="ionicons "></ion-icon>
-        <ion-icon name="logo-pinterest" class="ionicons pinterest"></ion-icon>
+            <a href="#" class="ionicons ">
+                <ion-icon name="logo-facebook">&nbsp;</ion-icon>
+            </a>
+            <a href="#" class="ionicons ">
+                <ion-icon name="logo-instagram">&nbsp;</ion-icon>
+            </a>
+            <a href="#" class="ionicons ">
+                <ion-icon name="logo-twitter">&nbsp;</ion-icon>
+            </a>
+            <a href="#" class="ionicons ">
+                <ion-icon name="logo-pinterest">&nbsp;</ion-icon>
+            </a>
+
         </div>
         <div class="attribution ">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge " target="_blank ">Frontend Mentor</a>. Coded by <a href="# ">Ketema Girma</a>.
         </div>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
