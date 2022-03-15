@@ -1,0 +1,445 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /*  This defines what 1rem is */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.navigation__nav {
+    color: #fff;
+}
+
+.navigation__nav .heading-secondary {
+    padding-top: 6rem;
+}
+
+.arrow-down {
+    display: block;
+    margin: auto;
+    /* text-align: center; */
+    font-size: 20rem;
+    font-weight: 100;
+    /* width: 3rem; */
+    padding-top: 9rem;
+}
+
+.header--logo {
+    /* color: #fff; */
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Fraunces', sans-serif;
+    /* position: absolute; */
+    /* text-transform: uppercase; */
+}
+
+.navigation {
+    background: url(./images/desktop/image-header.jpg) no-repeat center center/cover;
+}
+
+.navigation__checkbox {
+    display: none;
+}
+
+.navigation__button {
+    background-color: #fff;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.navigation__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient(#7ed56f, #28b485);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+@media only screen and (min-width: 50.01rem) {
+    .navigation__button {
+        /* background-color: transparent; */
+        width: 0;
+        opacity: 0;
+    }
+    .navigation__background {
+        /* background-color: transparent; */
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.navigation__nav {
+    height: 80vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    opacity: 1;
+    width: 100vw;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* padding-top: 3rem; */
+}
+
+.navigation__list {
+    position: absolute;
+    text-align: center;
+    right: 3rem;
+    top: 3rem;
+}
+
+.navigation__item {
+    margin: 1rem;
+    display: inline;
+}
+
+.navigation__link,
+.navigation__link:link,
+.navigation__link:visited {
+    display: inline;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%;
+    transition: all .4s;
+}
+
+
+/* .navigation__link:link span,
+.navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block;
+} */
+
+.navigation__link:hover,
+.navigation__link:active {
+    background-position: 100%;
+    color: #000;
+    transform: translateX(1rem);
+    border-radius: 1rem;
+}
+
+.navigation__checkbox:checked~.navigation__background {
+    transform: scale(80);
+}
+
+.navigation__checkbox:checked~.navigation__nav {
+    opacity: 1;
+    width: 100%;
+}
+
+@media only screen and (max-width: 50rem) {
+    .navigation__item {
+        display: block;
+        margin: 3rem;
+    }
+    .navigation__nav {
+        opacity: 0;
+        width: 0;
+        top: 0;
+        right: 0;
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+}
+
+.navigation__icon {
+    position: relative;
+    margin-top: 3.5rem;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+}
+
+.navigation__icon::before {
+    top: -.8rem;
+}
+
+.navigation__icon::after {
+    top: .8rem;
+}
+
+.navigation__button:hover .navigation__icon::before {
+    top: -1rem;
+}
+
+.navigation__button:hover .navigation__icon::after {
+    top: 1rem;
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon {
+    background-color: transparent;
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+}
+
+.heading-primary {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    font-family: 'Fraunces', sans-serif;
+}
+
+.heading-secondary {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Fraunces', sans-serif;
+    text-align: center;
+}
+
+p {
+    color: hsl(228, 45%, 44%);
+    font-size: 1.6rem;
+}
+
+main p {
+    width: 40rem;
+}
+
+.transform-standout {
+    margin: auto;
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+.transfrom-brand,
+.stand-out {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.transform-standout img {
+    width: 50%;
+}
+
+.transform-standout p,
+.stand-out p {
+    width: 100%;
+    padding: 3rem 10rem;
+}
+
+button,
+img {
+    display: block;
+    /* position: cover; */
+}
+
+.learn-more-btn {
+    /* margin: auto; */
+    border: none;
+    color: white;
+    background-color: white;
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+
+.learn-more-btn a {
+    text-decoration: none;
+    background-color: none;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.learn-more-btn a:hover {
+    padding: .5rem;
+    border-bottom: .6rem solid orange;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.stand-out .learn-more-btn a:hover {
+    padding: .5rem;
+    border-bottom: .6rem solid red;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.graphic-design-photography {
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.graphic-design {
+    background: url(./images/desktop/image-graphic-design.jpg) no-repeat center center/cover;
+    min-height: 40rem;
+    width: 50%;
+}
+
+.Photography {
+    background: url(./images/desktop/image-photography.jpg) no-repeat center center/cover;
+    min-height: 40rem;
+    width: 50%;
+    /* text-align: center; */
+}
+
+.graphic-design h2,
+.Photography h2 {
+    padding-top: 25rem;
+    width: 100%;
+    /* margin-top: 10rem; */
+}
+
+.graphic-design p,
+.Photography p {
+    width: 100%;
+    padding: 2.5% 30% 0% 20%;
+    margin: auto;
+    color: #000;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+}
+
+.clients-testimonials {
+    height: 50rem;
+    display: flex;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.client__image {
+    margin: auto;
+    border-radius: 50%;
+}
+
+.client__emily,
+.client__thomas,
+.client__jennie {
+    width: 33.3333%;
+}
+
+.client__paragraph {
+    padding-left: 4rem;
+    /* margin: 0rem 9rem; */
+    /* width: 100%; */
+    width: 90%;
+    padding-top: 2em;
+    color: #000;
+}
+
+.clnt-test h2 {
+    padding-top: 3rem;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-gallery {
+    height: 100%;
+    width: 25%;
+}
+
+footer {
+    background-color: hsl(168, 34%, 41%);
+    margin-top: 0;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+footer .heading-secondary {
+    font-family: 'Fraunces', sans-serif;
+    text-transform: lowercase;
+    font-weight: 900;
+    padding-top: 5rem;
+    line-height: 5rem;
+    /* font-weight: 00; */
+}
+
+footer ul {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer a {
+    color: rgb(49, 43, 43);
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    font-size: 1.55rem;
+    color: #000;
+}
+
+footer ul li {
+    display: inline;
+    list-style: none;
+    padding-bottom: 4rem;
+    margin: 2rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+.icons {
+    font-size: 3rem;
+}
+
+.ionicons {
+    padding: 2rem;
+}
+
+.pinterest {
+    margin-top: -1rem;
+}
