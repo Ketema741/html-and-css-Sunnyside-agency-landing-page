@@ -27,7 +27,7 @@ Sunnyside agency landing page solution
 ### Links
 
 - Solution URL: https://github.com/Ketema741/FrontEndProject.git
-- Live Site URL: https://ketema741.github.io/FrontEndProject/#
+- Live Site URL: https://ketema741.github.io/FrontEndProject/
 
 ### Built with
 - HTML5 

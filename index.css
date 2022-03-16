@@ -57,14 +57,11 @@ body {
 
 .header--logo {
     color: #fff;
-    /* position: relative; */
     padding-left: 2rem;
     padding-top: 2rem;
     font-size: 3rem;
     font-weight: 600;
     font-family: 'Fraunces', sans-serif;
-    /* position: absolute; */
-    /* text-transform: uppercase; */
 }
 
 .navigation {
@@ -90,15 +87,14 @@ body {
 }
 
 .navigation__background {
-    height: 5rem;
-    width: 5rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 25%;
     position: absolute;
-    top: 6.5rem;
-    right: 6.5rem;
+    top: 7rem;
+    right: 7rem;
     background-image: radial-gradient(#7ed56f, #28b485);
     z-index: 1000;
-    /* transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); */
     transition: all .5s;
     padding-right: 0;
 }
@@ -112,7 +108,6 @@ body {
     opacity: 1;
     width: 100vw;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    /* padding-top: 3rem; */
 }
 
 .navigation__list {
@@ -326,11 +321,9 @@ main p {
 button,
 img {
     display: block;
-    /* position: cover; */
 }
 
 .learn-more-btn {
-    /* margin: auto; */
     border: none;
     color: white;
     background-color: white;
@@ -344,7 +337,6 @@ img {
     color: black;
     font-size: 1.6rem;
     font-weight: bold;
-    /* border-bottom: 1rem solid red; */
 }
 
 .learn-more-btn a:hover {
@@ -387,7 +379,6 @@ img {
     min-height: 40rem;
     width: 50%;
     color: hsl(198, 62%, 26%)
-    /* text-align: center; */
 }
 
 @media only screen and (max-width: 50rem) {
@@ -406,7 +397,6 @@ img {
 .Photography h2 {
     padding-top: 35rem;
     width: 100%;
-    /* margin-top: 10rem; */
 }
 
 .graphic-design p,
@@ -431,7 +421,6 @@ p {
 .client__image {
     margin: auto;
     border-radius: 50%;
-    /* padding-top: 10rem; */
 }
 
 .client__emily,
@@ -455,8 +444,6 @@ p {
 
 .client__paragraph {
     padding-left: 4rem;
-    /* margin: 0rem 9rem; */
-    /* width: 100%; */
     width: 90%;
     padding-top: 2em;
     color: hsl(232, 10%, 55%);
@@ -464,7 +451,6 @@ p {
 }
 
 .clnt-test .heading-secondary {
-    /* padding-top: 3rem; */
     color: hsl(240, 20%, 1%);
 }
 
@@ -481,7 +467,6 @@ p {
     float: left;
     width: 25%;
     padding-bottom: 8rem;
-    /* margin-top: 3rem; */
 }
 
 footer {
