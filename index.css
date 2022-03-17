@@ -39,13 +39,9 @@ body {
     left: 50%;
     transform: translate(-50%, -25%);
     display: block;
-    /* margin: auto; */
-    /* text-align: center; */
     font-size: 20rem;
     font-weight: 100;
-    /* width: 3rem; */
     margin-top: 15rem;
-    /* text-align: center; */
 }
 
 @media only screen and (max-width: 50rem) {
@@ -467,6 +463,12 @@ p {
     float: left;
     width: 25%;
     padding-bottom: 8rem;
+}
+
+@media only screen and (max-width: 50rem) {
+    .image-gallery {
+        width: 50%;
+    }
 }
 
 footer {
